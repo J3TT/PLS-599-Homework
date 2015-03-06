@@ -1,10 +1,8 @@
 #!bin/user/python
-# Opens ROSALIND file containing lines
-
 #Generate counter variable
 counter = 0
 
-#Open file and create output file
+#Opens Rosalind file and creates new output file
 with open('rosalind_ini5.txt', 'r') as inpt:
 	with open('rosalind_ini5_answers.txt', 'w') as otpt:
 	
