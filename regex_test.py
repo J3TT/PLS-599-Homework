@@ -1,0 +1,10 @@
+#!/usr/bin/python
+#Import RegEx module
+import re
+#Enter sequence to be analyzed, create code to open sequence file as input
+sequence = input("Enter sequence: ")
+#AGO hook motif to look for
+ago_hook = re.compile('(GWG|WG|GW)', re.IGNORECASE)
+#Create code to search whole sequence/file for all AGO hooks
+ago_hooks = re.search(ago_hook, sequence)
+print(ago_hooks)
